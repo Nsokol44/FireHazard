@@ -5,3 +5,19 @@ public/sw.js
 public/workbox-*.js
 .env*.local
 .DS_Store
+
+# --- FireScore engine (engine/): caches and run outputs (data provenance is
+# documented in the engine docs; the data itself is re-fetchable) ---
+engine/projects/
+*.parquet
+!engine/tests/**/*.parquet
+engine/cache/
+engine/outputs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+engine/osmnx_cache/
+engine/dist/
+engine/build/
+*.egg-info/
+engine/inventory/
